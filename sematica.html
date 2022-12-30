@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta author="Maciel Oliveira" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semâtica</title>
+
+    <!----------------------------------------------------------------->
+    <!--Início do CSS-->
+    <style>
+      h1,
+      h2,
+      h3 a:hover {
+        text-align: center;
+        font-style: normal;
+      }
+
+      tr {
+        background-color: lightgray;
+        margin: 2px;
+        padding: 5px;
+        border: gray solid 5px;
+        border-radius: 3px;
+      }
+
+      legend,
+      summary {
+        font-size: 16px;
+        text-align: center;
+        color: blue;
+        text-decoration: double;
+      }
+
+      p,
+      li,
+      span,
+      h4 {
+        font-style: unset;
+        font-size: 14px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        margin: 15px;
+        padding: auto;
+      }
+    </style>
+    <!--Fim do CSS-->
+  </head>
+  <body>
+    <h1>O Html tem que fazer sentido</h1>
+    <h2>Essa é a definição da Semântica</h2>
+    <hr />
+    <summary>Sobre o Html5</summary>
+    <legend>XHTML x HTML5</legend>
+    <h3>Algumas diferenças do XHTML para p HTML5 são bem visíveis</h3>
+
+    <legend><h3>Dentro do Body há algumas tags com significados</h3></legend>
+    <h3>Os quais traremos os seus dignificados nos quadros abaixo:</h3>
+    <table border="5">
+     
+      <!----------------------------------------------------------------->
+      <!--Header-->
+      <tr>
+        <td>
+          <h1>Header</h1>
+          <li>Cabeçalho da página</li>
+          <p>
+            Aqui onde se concentra parte das informações da página principal
+          </p>
+          <p>Geralmente contém também a Barra de Menus para Navegação</p>
+
+          <span>
+            <p>Página Principal</p>
+            <p>Quem Somos</p>
+            <p>Contato</p>
+          </span>
+          <p>E sua ligação (link/ _blank) para as respectivas páginas</p>
+        </td>
+
+        <!----------------------------------------------------------------->
+        <!--Main-->
+        <td>
+          <h1>Main</h1>
+          <li>Definição do Corpo Principal</li>
+          <p>Aqui onde vai a parte principal do código</p>
+          <p>As seções: Article, Nav, FigCaption,</p>
+          <p>Esta tag não pode ser filha (herdeira de nenhuma)</p>
+          <p>
+            Ela precisa ser a tag principal, o conteúdo a ser buscado pelo bot
+          </p>
+          <p>Estas tags podem estar aqui dentro</p>
+          <p><li>Header, Footer, Article</li></p>
+          <p>Pode substituir o article por section</p>
+          <p>Não pode haver mais de um elemento main no documento</p>
+        </td>
+      </tr>
+      <hr />
+
+      <!----------------------------------------------------------------->
+      <!--Aside-->
+      <tr>
+        <td>
+          <h1>Aside</h1>
+          <li>Campo ao lado do Corpo principal</li>
+          <p>Pode também conter elementos do tipo Menu</p>
+          <p>Ou pequenos quadros de notícias ou colaboradores</p>
+          <p>
+            Pode estar em qualquer um dos lados (left/right), barras laterais
+          </p>
+          <p>Assunto sem ligação com o assunto principal da página</p>
+          <p>A semântica dele é diferente da section, com menor importância</p>
+        </td>
+
+        <!----------------------------------------------------------------->
+        <!--Section-->
+        <td>
+          <h1>Section</h1>
+          <li>Divide o corpo da página em seções</li>
+          <p>
+            O elemento section pode ser declarado dentro dos outros elementos
+          </p>
+          <p>Define uma seção sobre algum artigo ou notícia.</p>
+          <p>
+            Não tem limites para colocar a section, são seções de informações
+          </p>
+          <p>
+            Lista de resultado de pesquisas, podem ser inseridos dentro de uma
+            section
+          </p>
+        </td>
+      </tr>
+
+      <!----------------------------------------------------------------->
+      <!--Nav-->
+      <tr>
+        <td>
+          <h1>Nav</h1>
+          <li>Links de Navegação - Pode ter vários</li>
+          <p>No Footer - São Links de Rodapé</p>
+          <p>Por padrão, utiliza uma lista não ordenada</p>
+          <p>Pode ser utilizados dentros dos campos</p>
+          <p></p>
+        </td>
+
+        <!----------------------------------------------------------------->
+        <!--Article-->
+        <td>
+          <h1>Article</h1>
+          <li>Seção para escrever artigos</li>
+          <p>Esta seção pode ser usada em diversas outras partes da divisão da
+            página</p>
+          <p>Muito usada para expor notícias, imagens, links e outras</p>
+          <p>Permite colocar um article dentro do outro, relacionando como uma herança</p>
+          <p><time datetime>Pode ser usado dentro do article para mostrar as horas</time></p>
+          <p><time pubdate> Também pode ser usado</time></p>
+        </td>
+      </tr>
+
+      <!----------------------------------------------------------------->
+      <!--Blockquote-->
+      <tr>
+        <td>
+          <h1>Blockquote e Q</h1>
+          <li>Blockquote pode ir dentro do Article, gerando uma referência sobre a citação -</li>
+          <p><blockquote cite> Liga a citação que outra pessoa falou, geralmente uma url</blockquote></p>
+    
+      <!----------------------------------------------------------------->
+      <!--Q-->
+          <h1>Q</h1>
+          <p><li> Também faz uma citação </li></p>
+            <p>A citação "q cite="" " não quebra a linha</p>
+            <p></p>
+
+        </td>
+    
+        <!----------------------------------------------------------------->
+        <!--Figure-->
+        <td>
+          <h1>Figure</h1>
+          <li>Figure - Seção para inserção de figuras</li>
+          <p>É praticamente um container - um div para inserir coisas dentro dela</p>
+          <p>Delimita o escopo da figura</p>
+        </td>
+      </tr>
+
+      <!----------------------------------------------------------------->
+      <!--FigCaption-->
+      <tr>
+        <td>
+          <h1>Figcaption</h1>
+          <li>Figcaption - Vai dentro da Figure, como se fosse uma descrição da imagem</li>
+          <p>Podendo ser um rodapé com apenas algo sobre a imagem, ou um texto também</p>
+          <p></p>
+        </td>
+
+        <!----------------------------------------------------------------->
+        <!--Picture-->
+        <td>
+          <h1>Picture</h1>
+          <li>Picture - É diferente do Figure</li>
+          <p>Pode colocar diversas imagens dentro do picture</p>
+          <p>Sua sintaxe é "source srcset="car-image.jpg" " media="(min-width: 1000px)"</p>
+        </td>
+      </tr>
+
+      <!----------------------------------------------------------------->
+      <!--Footer-->
+      <tr>
+        <td>
+          <h1>Footer</h1>
+          <li>Rodapé da página</li>
+          <p>
+            É a parte final da página, onde estarão inseridas algumas
+            informações
+          </p>
+          <p>
+            Como a marca registrada, especificação de contatos, mapas, endereçoa
+            e demais informações
+          </p>
+          <p>Um tag interessante é a tag address</p>
+          <p></p>
+        </td>
+
+        <!----------------------------------------------------------------->
+        <!--ARIA-->
+        <td>
+          <h1>ARIA</h1>
+          <li>Acessible Rich Internet Applications</li>
+          <p>Atributos inseridos no HTML - Árvore de acessibilidade</p>
+          <p>Acessibility - Enable full page acessibility free</p>
+          <p>Ex: ul class="menu" aria-hidden="true"</p>
+        </td>
+      </tr>
+
+      <!----------------------------------------------------------------->
+      <!--Web Scraping-->
+      <tr>
+        <td>
+          <h1>Web Scraping</h1>
+          <li>Crawler (Rastreadores - Robôs[aplicações])</li>
+          <p>Entra no site e lêem o HTML, após isso indexam.</p>
+          <p>GoogleBot - Indexação das páginas Web no buscador do boot</p>
+          <p>GoogleSearch</p>
+          <p>
+            Web Scraping minera e recolhe dados que estão expostos em
+            plataformas de url públicas
+          </p>
+          <p>Interessante: Estudar sobre o schema.org (para motores de busca)</p>
+        </td>
+
+        <!----------------------------------------------------------------->
+        <!--SEO-->
+        <td>
+          <h1 align="center">SEO</h1>
+          <h4><li>Search Engine Optimize</li></h4>
+          <p>Está de certa forma ligado com o Web Scraping</p>
+          <p>É uma otimização para mecanismos de buscas</p>
+          <p>É um conjunto de técnicas para melhorar as buscas do site do seu cliente</p>
+          <p>Este SEO trabalha com as novas semânticas de Código (HTML5)</p>
+          <p>Google Search Console, faz verificações e validação para coletar as métricas</p>
+          <p>O Google Adwords, avançou para o Google Ads</p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
